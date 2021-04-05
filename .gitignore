@@ -1,5 +1,9 @@
 # dependencias
 node_modules/
+
+# relatorios mocha
+mochawesome-report
+
 # videos
 cypress/videos
 # outros

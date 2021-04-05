@@ -2,7 +2,11 @@
  "$schema": "https://raw.githubusercontent.com/cypress-io/cypress/develop/cli/schema/cypress.schema.json",
  "baseUrl": "http://automationpractice.com/",
  "watchForFileChanges": true,
- "experimentalSourceRewriting": true
+ "experimentalSourceRewriting": true,
+ "reporter": "cypress-multi-reporters",
+ "reporterOptions": {
+     "configFile":"reporter-config.json"
+ }
  
 
 
