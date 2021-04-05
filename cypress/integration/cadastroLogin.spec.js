@@ -22,7 +22,7 @@ describe('Cadastrar Login', () => {
         cy.get('input[type=password]').type(chance.word({ length: 5 }))
         cy.get('#days').select(chance.integer({ min: 1, max: 28 }).toString())
         cy.get('#months').select(chance.month())
-        cy.get('#years').select(chance.year({ min: 1920, max: 2020 }))
+        cy.get('#years').select(chance.year({ min: 1899, max: 2020 }))
         cy.get('input#newsletter').check()
        
         cy.get('input#optin').check()
