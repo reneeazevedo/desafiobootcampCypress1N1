@@ -2,7 +2,7 @@
 let Chance = require('chance');
 let chance = new Chance()
 const welcome = 'Welcome to your account'
-const myAddress = 'Meude Endereço'
+const myAddress = 'Meu Endereço'
 const urlMyAccount = 'http://automationpractice.com/index.php?controller=my-account'
 
 describe('Cadastrar Login', () => {
