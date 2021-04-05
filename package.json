@@ -15,9 +15,8 @@
     "mochawesome": "^6.2.2",
     "mochawesome-merge": "^4.2.0",
     "mochawesome-report-generator": "^5.2.0"
-  }, 
+  },
   "scripts": {
-    "cy:open": "npx cypress open",
     "cy:run": "npx cypress run",
     "report:merge": "mochawesome-merge > index.json",
     "report:mocha": "marge index.json",
