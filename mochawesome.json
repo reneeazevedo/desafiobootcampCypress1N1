@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-04-05T02:02:58.779Z",
-    "end": "2021-04-05T02:03:13.983Z",
-    "duration": 15204,
+    "start": "2021-04-06T22:42:51.077Z",
+    "end": "2021-04-06T22:43:08.366Z",
+    "duration": 17289,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "70a950b2-1c2d-4e4a-9ff6-e9d1ececcba2",
+      "uuid": "5d389da3-cc31-4c5a-b1b6-7341ea1b41de",
       "title": "",
       "fullFile": "cypress/integration/cadastroLogin.spec.js",
       "file": "cypress/integration/cadastroLogin.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ac0f501c-b84b-43e8-8e7f-3d0a22964234",
+          "uuid": "8feb2a4c-b91f-4299-91dc-adb9c120a74f",
           "title": "Cadastrar Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Cadastrar Login com Sucesso",
               "fullTitle": "Cadastrar Login Cadastrar Login com Sucesso",
               "timedOut": null,
-              "duration": 15121,
+              "duration": 17206,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//Acessar a página Principal\ncy.visit('index.php'); //- Clicar no botão de \"Sign in\"\ncy.contains('Sign in').click(); //- Preencher as informações de e-mail (não pode ser repetido)\ncy.get('input#email_create').type(chance.email()); //- Clicar no botão \"Create an Account\"\ncy.get('button#SubmitCreate').click(); //- Preencher as informações do formulário de cadastro\n//- Escolher gênero \"Mr\" ou \"Mrs\"\ncy.get(\"#id_gender\".concat(chance.integer({\n  min: 1,\n  max: 2\n}))).check(); // Preencher \"first name\"\ncy.get('input#customer_firstname').type(chance.first()); // Preencher \"last name\"\ncy.get('input#customer_lastname').type(chance.last()); // Prencher \"password\"\ncy.get('input[type=password]').type(chance.word({\n  length: 5\n})); //Informar \"Date of Birth\"\ncy.get('#days').select(chance.integer({\n  min: 1,\n  max: 28\n}).toString());\ncy.get('#months').select(chance.month());\ncy.get('#years').select(chance.year({\n  min: 1899,\n  max: 2020\n})); //Marcar \"Sign up for our newsletter!\"\"\ncy.get('input#newsletter').check(); //Marcar \"Receive special offers from our partners!\"\ncy.get('input#optin').check(); //Informar \"company\"\ncy.get('input#company').type(chance.company()); //Preencher \"address\"\ncy.get('input#address1 ').type(chance.street()); //Preecnher \"address(Line 2)\"\"\ncy.get('input#address2 ').type(chance.address()); //Preencher \"city\"\ncy.get('input#city').type(chance.city()); // Selecionar \"state\"\ncy.get('select#id_state').select(chance.state({\n  full: true,\n  country: 'us'\n}), {\n  force: true\n}); // Informar o \"ZIP/Postal Code\"\ncy.get('input#postcode').type(chance.zip()); // Preecnher \"Additional information\"\ncy.get('textarea#other').type(chance.word()); // Informar o \"Home phone\"\ncy.get('input#phone').type(chance.phone()); // Informar o \"Mobile phone\"\ncy.get('input#phone_mobile').type(chance.phone()); // Limpar campo \"Assign an address alias for future reference.\" \ncy.get('input#alias').clear();\ncy.get('input#alias').type(myAddress); //- Clicar no botão Register\ncy.contains('Register').click(); //- Validar que foi redirecionado para a url correta\ncy.url().should('eq', urlMyAccount); //- Validar exibição do texto 'Welcome to your account'\ncy.get('p.info-account').should('contain.text', welcome);",
               "err": {},
-              "uuid": "81b8d3e6-4698-47c2-bf61-18cfe1d1b5b7",
-              "parentUUID": "ac0f501c-b84b-43e8-8e7f-3d0a22964234",
+              "uuid": "63c7f855-1a6a-400f-a1cf-5f61621b5be2",
+              "parentUUID": "8feb2a4c-b91f-4299-91dc-adb9c120a74f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "81b8d3e6-4698-47c2-bf61-18cfe1d1b5b7"
+            "63c7f855-1a6a-400f-a1cf-5f61621b5be2"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15121,
+          "duration": 17206,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
